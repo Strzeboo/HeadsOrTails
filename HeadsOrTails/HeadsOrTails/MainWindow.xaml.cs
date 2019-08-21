@@ -33,9 +33,9 @@ namespace HeadsOrTails
             liczba = random.Next(0, 2); //musi być 2 ponieważ Next zwraca mniejsze bądź równe 0 i mniejsze o 2 czyli całkowicie 1
 
             if (liczba.Equals(0))
-                textBlock.Text = "ORZEŁ";
+                textBlock.Text = "HEADS";
             else
-                textBlock.Text = "RESZKA";
+                textBlock.Text = "TAILS";
         }
     }
 }

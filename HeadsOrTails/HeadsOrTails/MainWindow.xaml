@@ -8,6 +8,6 @@
         Title="HeadsOrTails by Strzebo" Height="150" Width="350">
     <StackPanel Margin="15">
         <TextBlock Margin="0,20,0,10" Name="textBlock" TextAlignment="Center"/>
-        <Button Name="button" Content="LOSUJ" Click="Button_Click"/>
+        <Button Name="button" Content="RANDOM" Click="Button_Click"/>
     </StackPanel>
 </Window>
