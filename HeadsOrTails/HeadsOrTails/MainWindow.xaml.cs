@@ -36,13 +36,15 @@ namespace HeadsOrTails
 
             if (liczba.Equals(0))
             {
-                textBlock.Text = "HEADS";
+                textBlock.Text = "TAILS";
                 howManyTimesTailsHappend++;
+                howManyTimesTailsTextBlock.Text = howManyTimesTailsHappend.ToString();
             }
             else
             {
-                textBlock.Text = "TAILS";
+                textBlock.Text = "HEADS";
                 howManyTimesHeadsHappend++;
+                howManyTimesHeadsTextBlock.Text = howManyTimesHeadsHappend.ToString();
             }
         }
 
