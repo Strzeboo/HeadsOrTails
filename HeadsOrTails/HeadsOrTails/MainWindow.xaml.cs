@@ -31,8 +31,7 @@ namespace HeadsOrTails
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Random random = new Random();
-            liczba = random.Next(0, 2); //musi być 2 ponieważ Next zwraca mniejsze bądź równe 0 i mniejsze o 2 czyli całkowicie 1
+            liczba = RollHelper.RollOnce();
 
             if (liczba.Equals(0))
             {
