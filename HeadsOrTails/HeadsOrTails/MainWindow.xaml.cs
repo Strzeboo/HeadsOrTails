@@ -26,6 +26,8 @@ namespace HeadsOrTails
         }
 
         int liczba = 0;
+        int howManyTimesTailsHappend = 0;
+        int howManyTimesHeadsHappend = 0;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -33,9 +35,17 @@ namespace HeadsOrTails
             liczba = random.Next(0, 2); //musi być 2 ponieważ Next zwraca mniejsze bądź równe 0 i mniejsze o 2 czyli całkowicie 1
 
             if (liczba.Equals(0))
+            {
                 textBlock.Text = "HEADS";
+                howManyTimesTailsHappend++;
+            }
             else
+            {
                 textBlock.Text = "TAILS";
+                howManyTimesHeadsHappend++;
+            }
         }
+
+
     }
 }

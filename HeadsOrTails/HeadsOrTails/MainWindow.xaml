@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HeadsOrTails"
         mc:Ignorable="d"
-        Title="HeadsOrTails by Strzebo" Height="150" Width="350">
+        Title="HeadsOrTails by Strzebo" Height="220" Width="350">
     <StackPanel Margin="15">
         <TextBlock Margin="0,20,0,10" Name="textBlock" TextAlignment="Center"/>
         <Button Name="button" Content="RANDOM" Click="Button_Click"/>
+        <TextBlock Margin="0,20,0,0" Text="TAILS:" TextAlignment="Center"/>
+        <TextBlock Name="howManyTimesTailsTextBlock" TextAlignment="Center"/>
+        <TextBlock Text="HEADS:" TextAlignment="Center"/>
+        <TextBlock Name="howManyTimesHeadsTextBlock" TextAlignment="Center"/>
     </StackPanel>
 </Window>
